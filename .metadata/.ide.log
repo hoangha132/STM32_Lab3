@@ -687,3 +687,44 @@
 2024-10-31 13:56:57,462 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
 2024-10-31 13:56:57,465 [INFO] ApiDb:276 - Save user favorites file C:\Users\Welcome/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2024-10-31 13:56:57,465 [INFO] ApiDb:280 - User favorites MCUs=[]
+2024-10-31 14:01:34,850 [INFO] SetLabelOnPin:377 - Can not restore dialog size for Dialog.
+2024-10-31 14:02:05,305 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x147,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-31 14:02:08,942 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-31 14:03:23,762 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x147,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-31 14:10:04,395 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-31 14:10:43,247 [INFO] Gpio:254 - dependency for GPIO []
+2024-10-31 14:11:09,801 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 830673608 Bytes (1073741824)
+2024-10-31 14:11:11,184 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 856888008 Bytes (1073741824)
+2024-10-31 14:11:13,145 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 855235000 Bytes (1073741824)
+2024-10-31 14:11:13,535 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2024-10-31 14:11:13,536 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2024-10-31 14:11:13,536 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2024-10-31 14:11:13,536 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2024-10-31 14:11:13,536 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2024-10-31 14:11:13,536 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2024-10-31 14:11:13,938 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\license.tmp_save
+2024-10-31 14:11:14,071 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\license.tmp
+2024-10-31 14:11:14,164 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\gpio.tmp_save
+2024-10-31 14:11:14,256 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\gpio.tmp
+2024-10-31 14:11:14,532 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\stm32f1xx_it.c_save
+2024-10-31 14:11:14,655 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\stm32f1xx_it.c
+2024-10-31 14:11:14,659 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\stm32f1xx_it.h_save
+2024-10-31 14:11:14,766 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\stm32f1xx_it.h
+2024-10-31 14:11:14,784 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-31 14:11:14,920 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\stm32f1xx_hal_msp.c
+2024-10-31 14:11:14,923 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\system.tmp_save
+2024-10-31 14:11:14,974 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\MXTmpFiles\system.tmp
+2024-10-31 14:11:14,990 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-31 14:11:15,091 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-31 14:11:15,108 [WARN] IPConfigManager:3148 - IP not found : TIM
+2024-10-31 14:11:15,109 [WARN] CodeGenerator:3268 - IP not found : null
+2024-10-31 14:11:15,125 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\main.h_save
+2024-10-31 14:11:15,203 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Inc\main.h
+2024-10-31 14:11:15,213 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\main.c_save
+2024-10-31 14:11:15,328 [INFO] CodeEngine:257 - Generated code: D:\VXL\GIT_STM32_LAB3\Lab3\Core\Src\main.c
+2024-10-31 14:11:16,782 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 95mS.
+2024-10-31 14:11:16,784 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2024-10-31 14:11:17,314 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2024-10-31 14:11:21,574 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 4790mS.
+2024-10-31 14:11:21,575 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2024-10-31 14:11:21,575 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.

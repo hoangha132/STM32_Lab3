@@ -1,0 +1,9 @@
+#ifndef SOFTWARE_TIMER_H
+#define SOFTWARE_TIMER_H
+
+#include "global.h"
+
+void setTimer(int index, int counter);
+void timerRun();
+
+#endif // SOFTWARE_TIMER_H
