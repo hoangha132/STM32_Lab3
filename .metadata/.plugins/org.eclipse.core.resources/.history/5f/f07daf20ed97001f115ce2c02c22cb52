@@ -1,0 +1,8 @@
+#ifndef TRAFFIC_LIGHT_H
+#define TRAFIFIC_LIGHT_H
+
+void initalLight(int x_axis, int y_axis);
+void set_X_axis_light(int red, int green, int yellow);
+void set_Y_axis_light(int red, int green, int yellow);
+
+#endif // TRAFFIC_LIGHT_H

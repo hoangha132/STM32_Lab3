@@ -1,0 +1,60 @@
+#include "fsm_manual.h"
+#include "main.h"
+
+int man_red_time = 0;
+int man_yellow_time = 0;
+int man_green_time = 0;
+void fsm_manual(){
+	switch(status){
+	case MAN_RED:
+		setTraffic(man_red_time, 2);
+		if (timer_flag[3] == 1){
+			HAL_GPIO_TogglePin(RED_0_GPIO_Port, RED_0_Pin);
+			HAL_GPIO_TogglePin(RED_1_GPIO_Port, RED_1_Pin);
+			setTimer(3, 1000);
+		}
+		if (isButtonPressed(1)){
+			set_X_axis_light(0, 0, 0);
+			set_Y_axis_light(0, 0, 0);
+			setTimer(3, 1000);
+			status = MAN_YELLOW;
+		}
+		if(isButtonPressed(2)){
+			man_red_time++;
+			if(man_red_time > 99){
+				man_red_time = red_time;
+			}
+		}
+		if(isButtonPressed(3)){
+			red_time = man_red_time;
+			green_time = red_time - yellow_time;
+		}
+		break;
+	case MAN_YELLOW:
+		setTraffic(man_red_time, 2);
+		if (timer_flag[3] == 1){
+			HAL_GPIO_TogglePin(YELLOW_0_GPIO_Port, YELLOW_0_Pin);
+			HAL_GPIO_TogglePin(YELLOW_1_GPIO_Port, YELLOW_1_Pin);
+			setTimer(3, 1000);
+		}
+		if (isButtonPressed(1)){
+			set_X_axis_light(0, 0, 0);
+			set_Y_axis_light(0, 0, 0);
+			setTimer(3, 1000);
+			status = MAN_GREEN;
+		}
+		if(isButtonPressed(2)){
+			man_red_time++;
+			if(man_red_time > 99){
+				man_red_time = red_time;
+			}
+		}
+		if(isButtonPressed(3)){
+			red_time = man_red_time;
+			green_time = red_time - yellow_time;
+		}
+		break;
+	default:
+		break;
+	}
+}

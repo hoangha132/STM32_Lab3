@@ -1,0 +1,17 @@
+#include "fsm_manual.h"
+#include "main.h"
+
+int man_red_time = 0;
+
+void fsm_manual(){
+	switch(status){
+	case MAN_RED:
+		setTraffic(man_red_time, 2);
+		if (timer_flag[3] == 1){
+			HAL_GPIO_TogglePin(RED_0, GPIO_Pin)
+		}
+		break;
+	default:
+		break;
+	}
+}

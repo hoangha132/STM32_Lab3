@@ -1,0 +1,11 @@
+#include "fsm_manual.h"
+
+void fsm_manual(){
+	switch(status){
+	case MAN_RED:
+		setTraffic(red_time, 2);
+		break;
+	default:
+		break;
+	}
+}

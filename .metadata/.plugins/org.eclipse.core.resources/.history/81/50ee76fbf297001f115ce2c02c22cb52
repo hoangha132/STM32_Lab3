@@ -1,0 +1,14 @@
+#include "fsm_automatic.h"
+
+int red_time = 5;
+int gree_time = 3;
+int yellow_time = 2;
+status =
+void fsm_automatic(){
+	switch(status){
+	case initial:
+		status = RED_GREEN;
+		initialLight(red_time, green_time);
+		setTimer(0, green_time*3);
+	}
+}

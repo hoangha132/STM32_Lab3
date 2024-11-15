@@ -90,17 +90,30 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
-  setTimer(0, 1000);
-  extern int timer_flag[10];
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+//  setTimer(0, 1000);
+  status = 10;
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  fsm_automatic();
+	  fsm_manual();
+//	  if(timer_flag[0]){
+//		  togasd();
+//		  setTimer(0, 1000);
+//	  }
+//	  if(isButtonPressed(1)){
+//	  		  HAL_GPIO_TogglePin(GREEN_0_GPIO_Port, GREEN_0_Pin);
+//	  	  }
+//	  if(isButtonPressed(2)){
+//	  		  HAL_GPIO_TogglePin(YELLOW_0_GPIO_Port, YELLOW_0_Pin);
+//	  	  }
+//	  if(isButtonPressed(3)){
+//		  HAL_GPIO_TogglePin(RED_0_GPIO_Port, RED_0_Pin);
+//	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -201,8 +214,8 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, RED_0_Pin|YELLOW_0_Pin|GREEN_0_Pin|RED_1_Pin
-                          |YELLOW_1_Pin|GREEN_1_Pin|EN_0_Pin|EN_1_Pin
-                          |EN_2_Pin|EN_3_Pin, GPIO_PIN_RESET);
+                          |YELLOW_1_Pin|GREEN_1_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG_0_Pin|SEG_1_Pin|SEG_2_Pin|SEG_3_Pin
@@ -215,11 +228,11 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : RED_0_Pin YELLOW_0_Pin GREEN_0_Pin RED_1_Pin
-                           YELLOW_1_Pin GREEN_1_Pin EN_0_Pin EN_1_Pin
-                           EN_2_Pin EN_3_Pin */
+                           YELLOW_1_Pin GREEN_1_Pin EN0_Pin EN1_Pin
+                           EN2_Pin EN3_Pin */
   GPIO_InitStruct.Pin = RED_0_Pin|YELLOW_0_Pin|GREEN_0_Pin|RED_1_Pin
-                          |YELLOW_1_Pin|GREEN_1_Pin|EN_0_Pin|EN_1_Pin
-                          |EN_2_Pin|EN_3_Pin;
+                          |YELLOW_1_Pin|GREEN_1_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -239,6 +252,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim ){
 	timerRun();
+	getKeyInput();
 }
 /* USER CODE END 4 */
 

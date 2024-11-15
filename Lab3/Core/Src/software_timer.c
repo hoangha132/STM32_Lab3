@@ -1,5 +1,4 @@
 #include "software_timer.h"
-#include "global.h"
 
 int timer_flag[10];
 int timer_count[10];
